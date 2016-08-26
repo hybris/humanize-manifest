@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"io/ioutil"
 	"os"
-	"github.com/go-yaml/yaml"
+	"gopkg.in/yaml.v1"
 	"github.com/hybris/gogobosh/local"
 	"github.com/hybris/gogobosh/models"
 )
