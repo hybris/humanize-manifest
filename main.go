@@ -33,9 +33,9 @@ func main() {
 	contents, err := ioutil.ReadFile(manifestPath)
 	fatalIf(err)
 	manifest := &models.DeploymentManifest{}
-	goyaml.Unmarshal(contents, manifest)
+	yaml.Unmarshal(contents, manifest)
 
-	str, err := goyaml.Marshal(*manifest)
+	str, err := yaml.Marshal(*manifest)
 	fatalIf(err)
 	fmt.Println(string(str))
 }
